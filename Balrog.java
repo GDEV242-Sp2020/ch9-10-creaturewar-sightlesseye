@@ -8,13 +8,6 @@ import java.util.Random;
  */
 public class Balrog extends Creature
 {
-    private static final int MAX_STR = 100;
-    private static final int MAX_HP = 200;
-    private static final int MIN_STR = 50;
-    private static final int MIN_HP = 80;
-
-    private int hp;
-    private int strength;
     private Random randy;
    
     /**
@@ -22,9 +15,13 @@ public class Balrog extends Creature
      */
     public Balrog()
     {
+        setMAX_STR(100);
+        setMAX_HP(200);
+        setMIN_STR(50);
+        setMIN_HP(80);
         randy = new Random();
-        hp = randy.nextInt(121) + 80;
-        strength = randy.nextInt(51) + 50;
+        setHP(randy.nextInt(121) + 80);
+        setStrength(randy.nextInt(51) + 50);
     }
 
     /**

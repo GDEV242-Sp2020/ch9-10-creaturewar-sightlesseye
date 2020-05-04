@@ -16,7 +16,7 @@ public class Creature
     private int MAX_HP;
     private int MIN_STR;
     private int MIN_HP;
-    
+
     private int hp;
     private int strength;
     private Random randy;
@@ -29,7 +29,7 @@ public class Creature
         MAX_HP = 10;
         MIN_STR = 10;
         MIN_HP = 10;
-        
+
         hp = 10;
         strength = 10;
         randy = new Random();
@@ -50,7 +50,7 @@ public class Creature
             hp = hitpoints;
             MAX_HP = hitpoints;
         }
-        
+
         if(strength < 5) {
             strength = 5;
             MAX_STR = 5;
@@ -58,13 +58,67 @@ public class Creature
             MAX_STR = str;
             strength = str;
         }
-        
+
         MIN_STR = 5;
         MIN_HP = 5;
-        
+
         randy = new Random();
     }
-    
+
+    /**
+     * Sets the maximum strength possible.
+     * 
+     * @param int value to set MAX_STR to
+     */
+    public void setMAX_STR(int str) {
+        MAX_STR = str;
+    }
+
+    /**
+     * Sets the maximum hp possible.
+     * 
+     * @param int value to set MAX_HP to
+     */
+    public void setMAX_HP(int hitpoints) {
+        MAX_HP = hitpoints;
+    }
+
+    /**
+     * Sets the minimum hp possible.
+     * 
+     * @param int value to set MIN_STR to
+     */
+    public void setMIN_STR(int str) {
+        MIN_STR = str;
+    }
+
+    /**
+     * Sets the minimum hp possible.
+     * 
+     * @param int value to set MIN_HP to
+     */
+    public void setMIN_HP(int hitpoints) {
+        MIN_HP = hitpoints;
+    }
+
+    /**
+     * Sets HP.
+     * 
+     * @param int value to set hp to
+     */
+    public void setHP(int hitpoints) {
+        hp = hitpoints;
+    }
+
+    /**
+     * Sets Strength.
+     * 
+     * @param int value to set strength to
+     */
+    public void setStrength(int str) {
+        strength = str;
+    }
+
     /**
      * Lowers the unit's health by the amount of damage taken.
      *
@@ -74,7 +128,7 @@ public class Creature
     {
         hp -= damage;
     }
-    
+
     /**
      * Tests whether or not a unit's stats were initialized within the maximum and minimum bounds.
      *
@@ -90,7 +144,7 @@ public class Creature
         } else {
             System.out.println("HP initialized properly!\n");
         }
-        System.out.println("Strength: " + hp + ".\nMaximum Strength: " + MAX_HP + ".\nMinimum Strength: " + MIN_HP + ".");
+        System.out.println("Strength: " + strength + ".\nMaximum Strength: " + MAX_STR + ".\nMinimum Strength: " + MIN_STR + ".");
         if(strength > MAX_STR || strength < MIN_STR) {
             System.out.println("Strength is not within acceptable boundaries.\n");
             ret = false;
@@ -104,7 +158,7 @@ public class Creature
         }
         return ret;
     }
-    
+
     /**
      * Deals damage to other units, and reduces their hit points.
      * @return int number of hp to reduce

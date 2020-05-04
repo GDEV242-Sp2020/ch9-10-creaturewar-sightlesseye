@@ -8,13 +8,6 @@ import java.util.Random;
  */
 public class Human extends Creature
 {
-    private static final int MAX_STR = 18;
-    private static final int MAX_HP = 30;
-    private static final int MIN_STR = 5;
-    private static final int MIN_HP = 8;
-
-    private int hp;
-    private int strength;
     private Random randy;
    
     /**
@@ -22,10 +15,13 @@ public class Human extends Creature
      */
     public Human()
     {
-        
+        setMAX_STR(18);
+        setMAX_HP(30);
+        setMIN_STR(5);
+        setMIN_HP(8);
         randy = new Random();
-        hp = randy.nextInt(23) + 8;
-        strength = randy.nextInt(14) + 5;
+        setHP(randy.nextInt(23) + 8);
+        setStrength(randy.nextInt(14) + 5);
     }
 
     /**

@@ -8,13 +8,6 @@ import java.util.Random;
  */
 public class Cyberdemon extends Creature
 {
-    private static final int MAX_STR = 40;
-    private static final int MAX_HP = 100;
-    private static final int MIN_STR = 20;
-    private static final int MIN_HP = 25;
-
-    private int hp;
-    private int strength;
     private Random randy;
    
     /**
@@ -22,9 +15,13 @@ public class Cyberdemon extends Creature
      */
     public Cyberdemon()
     {
+        setMAX_STR(40);
+        setMAX_HP(100);
+        setMIN_STR(20);
+        setMIN_HP(25);
         randy = new Random();
-        hp = randy.nextInt(76) + 25;
-        strength = randy.nextInt(21) + 20;
+        setHP(randy.nextInt(76) + 25);
+        setStrength(randy.nextInt(21) + 20);
     }
 
     /**
