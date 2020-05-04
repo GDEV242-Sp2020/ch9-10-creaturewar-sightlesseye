@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=main
+comment0.text=\r\n\ Main\ tester\ class.\r\n\r\n\ @author\ Ryan\ Canuel\r\n\ @version\ Spring\ 2020\r\n
+comment1.params=
+comment1.target=main()
+comment1.text=\r\n\ Constructor.\ Initializes\ all\ fields/unit\ types.\r\n
+comment2.params=cheese
+comment2.target=void\ main(java.lang.String[])
+comment2.text=\r\n\ Main\ method.\ Tests\ an\ arraylist\ filled\ with\ 10\ instances\ of\ each\ \r\n\ race,\ to\ make\ sure\ that\ none\ of\ them\ have\ health\ or\ strength\ that\ \r\n\ is\ too\ high\ or\ too\ low.\r\n
+numComments=3

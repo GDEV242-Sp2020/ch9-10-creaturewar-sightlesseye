@@ -1,6 +1,22 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Creature()
+comment0.target=Creature
+comment0.text=\r\n\ Creature\ is\ a\ unit\ of\ an\ army.\ Each\ has\ hitpoints\ to\ keep\ them\ \r\n\ "alive,"\ and\ strength\ to\ determine\ how\ powerful\ their\ attacks\r\n\ are.\r\n\ No\ accessor\ for\ strength\ or\ hp.\r\n\ \r\n\ @author\ Ryan\ Canuel\r\n\ @version\ Spring\ 2020\r\n
 comment1.params=
-comment1.target=int\ damage()
-numComments=2
+comment1.target=Creature()
+comment1.text=\r\n\ No\ args\ constructor\ for\ the\ Creature\ class.\r\n
+comment2.params=hitpoints\ str
+comment2.target=Creature(int,\ int)
+comment2.text=\r\n\ Constructor\ for\ the\ Creature\ class.\r\n\ \r\n\ @param\ hitpoints\ int\ value\ to\ initialize\ hp\ at.\r\n\ @param\ str\ int\ value\ to\ initialize\ strength\ at.\r\n\ If\ either\ value\ is\ below\ 5,\ it\ is\ initialized\ to\ 5.\r\n
+comment3.params=damage
+comment3.target=void\ takeWound(int)
+comment3.text=\r\n\ Lowers\ the\ unit's\ health\ by\ the\ amount\ of\ damage\ taken.\r\n\r\n\ @param\ \ damage\ amount\ to\ lower\ hp\ by\r\n
+comment4.params=
+comment4.target=boolean\ unitTest()
+comment4.text=\r\n\ Tests\ whether\ or\ not\ a\ unit's\ stats\ were\ initialized\ within\ the\ maximum\ and\ minimum\ bounds.\r\n\r\n\ @return\ \ boolean\ whether\ or\ not\ unit\ was\ initialized\ properly\r\n
+comment5.params=
+comment5.target=int\ damage()
+comment5.text=\r\n\ Deals\ damage\ to\ other\ units,\ and\ reduces\ their\ hit\ points.\r\n\ @return\ int\ number\ of\ hp\ to\ reduce\r\n
+comment6.params=
+comment6.target=boolean\ isAlive()
+comment6.text=\r\n\ Checks\ whether\ or\ not\ a\ unit\ is\ alive,\ determining\ by\ the\ amount\ \r\n\ of\ hp\ they\ have\ left.\r\n\ @return\ boolean\ true\ if\ unit\ is\ alive\r\n
+numComments=7
