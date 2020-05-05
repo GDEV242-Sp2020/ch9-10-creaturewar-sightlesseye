@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Army
+comment0.text=\r\n\ An\ Army\ is\ a\ grouping\ of\ any\ number\ of\ any\ types\ of\ units.\ Armies\ fight\ \r\n\ other\ armies\ to\ the\ death,\ in\ a\ turn-based,\ one\ person\ at\ a\ time\ manner,\r\n\ for\ some\ reason.\r\n\r\n\ @author\ Ryan\ Canuel\r\n\ @version\ Spring\ 2020\r\n
+comment1.params=
+comment1.target=Army()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Army.\ Creates\ an\ empty\ Army.\r\n
+comment2.params=numUnits
+comment2.target=Army(int)
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Army.\ Creates\ an\ Army\ with\ a\ \r\n\ number\ of\ randomized\ units,\ equal\ to\ the\ parameter\ recieved.\r\n\ \r\n\ @param\ numUnits\ number\ of\ units\ in\ the\ Army\r\n
+comment3.params=numUnits
+comment3.target=void\ recruit(int)
+comment3.text=\r\n\ Fills\ an\ Army\ with\ random\ units,\ using\ a\ d20-style\ random\ number\ \r\n\ generator.\r\n\ \r\n\ 1\:\ Critical\ Failure\!\ Generic\ Creature\ (5%\ chance)\r\n\ 2-8\:\ Human\ (40%\ chance)\r\n\ 9-12\:\ Elf\ (20%\ chance)\r\n\ 13-16\:\ Demon\ (20%\ chance)\r\n\ 17-19\:\ Cyberdemon\ (15%\ chance)\r\n\ 20\:\ Critical\ Success\!\ Balrog\ (5%\ chance)\r\n\ \r\n\ @param\ numUnits\ number\ of\ units\ to\ add\ into\ the\ Army\r\n
+comment4.params=
+comment4.target=void\ printRoster()
+comment4.text=\r\n\ Prints\ out\ the\ "roster"\ of\ what\ units\ are\ in\ the\ Army.\r\n
+comment5.params=
+comment5.target=Creature\ currentFighter()
+comment5.text=\r\n\ Return\ the\ army's\ current\ fighter.\ If\ everyone\ is\ knocked\ out,\ return\ null.\r\n\ \r\n\ @return\ \ creature\ who\ is\ currently\ fighting,\ or\ null\r\n
+numComments=6

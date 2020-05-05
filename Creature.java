@@ -137,6 +137,37 @@ public class Creature
     public boolean unitTest()
     {
         boolean ret = true;
+        //System.out.println("HP: " + hp + ".\nMaximum HP: " + MAX_HP + ".\nMinimum HP: " + MIN_HP + ".");
+        if(hp > MAX_HP || hp < MIN_HP) {
+            //System.out.println("HP is not within acceptable boundaries.\n");
+            ret = false;
+        } else {
+            //System.out.println("HP initialized properly!\n");
+        }
+        //System.out.println("Strength: " + strength + ".\nMaximum Strength: " + MAX_STR + ".\nMinimum Strength: " + MIN_STR + ".");
+        if(strength > MAX_STR || strength < MIN_STR) {
+            //System.out.println("Strength is not within acceptable boundaries.\n");
+            ret = false;
+        } else {
+            //System.out.println("Strength initialized properly!\n");
+        }
+        if(ret) {
+            System.out.println("Unit was properly initialized!");
+        } else {
+            System.out.println("Unit was NOT properly initialized.");
+        }
+        return ret;
+    }
+    
+    /**
+     * Tests whether or not a unit's stats were initialized within the maximum and minimum bounds.
+     * Prints out each step.
+     *
+     * @return  boolean whether or not unit was initialized properly
+     */
+    public boolean unitTestStepByStep()
+    {
+        boolean ret = true;
         System.out.println("HP: " + hp + ".\nMaximum HP: " + MAX_HP + ".\nMinimum HP: " + MIN_HP + ".");
         if(hp > MAX_HP || hp < MIN_HP) {
             System.out.println("HP is not within acceptable boundaries.\n");
@@ -152,9 +183,9 @@ public class Creature
             System.out.println("Strength initialized properly!\n");
         }
         if(ret) {
-            System.out.println("Unit was properly initialized!\nEnd test.\n");
+            System.out.println("Unit was properly initialized!");
         } else {
-            System.out.println("Unit was NOT properly initialized.\nEnd test.\n");
+            System.out.println("Unit was NOT properly initialized.");
         }
         return ret;
     }
